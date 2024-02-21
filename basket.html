@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Корзина</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html"><img src="img/logo.png" alt="Логотип" /></a>
+            <nav>
+                <a href="index.html" class="menu um20_white">Главная</a>
+                <a href="#" class="menu um20_white">Каталог</a>
+                <a href="about_workshop.html" class="menu um20_white">О мастерской</a>
+                <a href="#" class="menu um20_white">Покупателям</a>
+            </nav>
+            <input class="ul15_white" type="search" maxlength="30" placeholder="Поиск" />
+            <div class="btns">
+                <a href="#"><img src="img/profile.png" alt="Профиль" /></a>
+                <a href="#"><img src="img/cart.png" alt="Корзина" /></a>
+            </div>
+        </div>
+    </header>
+    <div class="basket">
+        <div class="container">
+            <ul class="breadcrumb_black">
+                <li><a class="ul18_gray" href="index.html">Главная</a></li>
+                <li><a class="ul18_gray" href="product_milk.html">Игрушка из дерева Молоковоз</a></li>
+                <li class="ul18_gray">Корзина</li>
+            </ul>
+            <div class="ur30_black name_basket">Корзина</div>
+            <div class="block_baskets">
+                <div class="basket_block">
+                    <div class="ur20_black">Ваш заказ:</div>
+                    <hr>
+                    <div class="product_basket">
+                        <div class="img_name">
+                            <img class="width140" src="img/slaider_moloco1.png" alt="">
+                            <div class="name_composition">
+                                <div class="ur20_black">Игрушка из дерева Молоковоз</div>
+                                <div class="ur18_gray">Бук, берёза, натуральное масло.</div>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <div class="quantity_block">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="29" height="29" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_540_227" transform="scale(0.01)" />
+                                        </pattern>
+                                        <image id="image0_540_227" width="100" height="100"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAZhJREFUeAHt1z9KA0EUB+AU/jmKlmouYGuTnShewV69QApBBN2JdlYSPIi1mbW08hbRXhksUhjMLrtIwG9hqnk8hu+3u8zr9TwECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQKCJwNvdwWZ1fbT9chv6Vuhni9fR8UYTw05qq/uT9RTD1TSGjxTDpzU3eC6L9+m4uMxGnWDXaZLKwaMQ5iEsthhO6li2rsm/psUHWHbAf7h/M9htDb6sQVWGc4HUfLnK4nSZZ+v9Kg7PBLJSgRzuCaReINMYdlp/AXUapDicCOX3UKoYHupYdlKTr3T5apdimAnmRzCzFIuLp9H+WifYTZrkISiNB1uGwu/BOFv86fzRJCy1BAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQILC6Al+9FjYLHbFO3gAAAABJRU5ErkJggg==" />
+                                    </defs>
+                                </svg>
+                                <div class="ur26_black">1</div>
+
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="29" height="29" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_540_228" transform="scale(0.01)" />
+                                        </pattern>
+                                        <image id="image0_540_228" width="100" height="100"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAxVJREFUeAHtnTtuE1EUhl3wWAkiEg0JG6ClwHMdK1ug5rGBFJFQpGSuQ0eFLBZCC56hpGIXgR50HVA0GTs+Oprzx5I/S1N45jyuv8+2PNYczWjEAwIQgAAEIAABCEAAAhCAAAQgAAEIQAACEJAQ+H6RnrV58vZqOzyQNKVJn0D78dX9ph5/bnL6090m83Ksn8GeUAJNTqddEddiFrPqfWhzincJ/Pzw4uG3uvq1TkiT0+WP46MH3SyehRH4ejF9dIuM5VdYiQlbAIW7BBb1yyebhJSYbhbPwgggJAytrzBCfNzCshAShtZXGCE+bmFZCAlD6yuMEB+3sCyEhKH1FUaIj1tYFkLC0PoKI8THLSwLIWFofYUR4uMWloWQMLS+wgjxcQvLQkgYWl9hhPi4hWUhJAytrzBCfNzCshAShtZXGCE+bmFZCAlD6yuMEB+3sCyEhKH1FUaIj1tYFkLC0PoKI8THLSwLIWvQlqvQ27PpXhmaUW7tbHK06dreEqNc03Jw6Gy6dydX3S+HZXI6XeT0exOYXTtexiTKfIp0aGj15NL1wMyuSVj9eifzNV8sw+4uH83VC0BIj8v5eH9Y+iuqtXV612vcm/NDzpJRXb1ZgXDYXWXaFSHGN5xGyOEBQmxCFjk9HfbjsKZakydzpNwupc3p0xp8w+8uP+nKT7sy7YqYnpjLJlcnX46f3xue/IaK5SSomY0fy0/AtvTEsLCQnn9s8CM7zF8nMtS2RgixcZJFIUSG2tYIITZOsiiEyFDbGiHExkkWhRAZalsjhNg4yaIQIkNta4QQGydZFEJkqG2NEGLjJItCiAy1rRFCbJxkUQiRobY1QoiNkywKITLUtkYIsXGSRSFEhtrWCCE2TrIohMhQ2xohxMZJFoUQGWpbI4TYOMmiECJDbWuEEBsnWRRCZKhtjRBi4ySL4pZHMtS2RtwUzMZJGvVvPuXGPQz/z2pUJ9LF0Gw0upqV709ylcmlnZzR2JY3RXM+3m9yel022Uzftrx41gEBCEAAAhCAAAQgAAEIQAACEIAABCAAgTsk8BepDndtBiLmpAAAAABJRU5ErkJggg==" />
+                                    </defs>
+                                </svg>
+
+                            </div>
+                            <div class="ur16_black">В наличии: 9 шт.</div>
+                        </div>
+                        <div class="price_delete">
+                            <div class="ub36_oranj">850 ₽</div>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_561_83" transform="scale(0.01)" />
+                                    </pattern>
+                                    <image id="image0_561_83" width="100" height="100"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket_block2">
+                    <div class="product_basket_block">
+                        <div class="ur18_gray">Товары, 1 шт.</div>
+                        <div class="ur18_gray">850 ₽ </div>
+                    </div>
+                    <div class="product_basket_block">
+                        <div class="ub36_black">Итого</div>
+                        <div class="ub36_black">850 ₽ </div>
+                    </div>
+                    <a href="making_order.html"><button class="ur26_white btn">Перейти к оформлению</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_block">
+                <div class="column_footer">
+                    <img class="img_footer" src="img/logo.png" alt="">
+                    <div class="ub36_white">8-900-503-16-56</div>
+                    <div class="ul16_white">160004, г. Вологда, Ленинградский тупик, 10</div>
+                    <div class="um16_white">mirigr.baby@yandex.ru</div>
+                    <a class="sertificat ur20_white" href="#">Сертификат соответствия</a>
+                </div>
+                <div class="column_footer">
+                    <div class="ub26_white">О нас</div>
+                    <div class="podmenu_footer">
+                        <a class="ur20_white" href="#">Мастерская</a>
+                        <a class="ur20_white" href="#">Создатели мастерской</a>
+                        <a class="ur20_white" href="#">Наши принципы</a>
+                        <a class="ur20_white" href="#">О нас пишут</a>
+                        <a class="ur20_white" href="#">Достижения и награды</a>
+                        <a class="ur20_white" href="#">Вопросы и ответы</a>
+                        <a class="ur20_white" href="#">Блог</a>
+                    </div>
+                </div>
+                <div class="column_footer1">
+                    <div class="ub26_white">Покупателям</div>
+                    <div class="podmenu_footer1">
+                        <a class="ur20_white" href="#">Доставка и оплата</a>
+                        <a class="ur20_white" href="#">Отзывы</a>
+                        <a class="ur20_white" href="#">Оптовый прайс</a>
+                        <a class="ur20_white" href="#">Контакты</a>
+                        <a class="ur20_white" href="#">Условия для партнёров</a>
+                    </div>
+                </div>
+                <div class="column_footer2">
+                    <div class="ub26_white">Каталог</div>
+                    <div class="podmenu_footer2">
+                        <a class="ur20_white" href="#">Техника</a>
+                        <a class="ur20_white" href="#">Новогодняя коллекция</a>
+                        <a class="ur20_white" href="#">Развивающие игрушки</a>
+                    </div>
+                </div>
+                <div class="column_footer">
+                    <a href="#"><img src="img/up.png" alt="Наверх"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

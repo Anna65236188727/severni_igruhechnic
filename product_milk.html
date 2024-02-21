@@ -2,85 +2,185 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="slaider_card.js">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>О нас пишут</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Игрушка из дерева Молоковоз</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html"><img src="img/logo.png" alt="Логотип" /></a>
-            <nav>
-                <a href="index.html" class="menu um20_white">Главная</a>
-                <a href="#" class="menu um20_white">Каталог</a>
-                <a href="about_workshop.html" class="menu um20_white">О мастерской</a>
-                <a href="#" class="menu um20_white">Покупателям</a>
-            </nav>
-            <input class="ul15_white" type="search" maxlength="30" placeholder="Поиск" />
-            <div class="btns">
-                <a href="#"><img src="img/profile.png" alt="Профиль" /></a>
-                <a href="#"><img src="img/cart.png" alt="Корзина" /></a>
+  <header class="header">
+    <div class="container">
+      <a href="index.html"><img src="img/logo.png" alt="Логотип" /></a>
+      <nav>
+        <a href="index.html" class="menu um20_white">Главная</a>
+        <a href="#" class="menu um20_white">Каталог</a>
+        <a href="about_workshop.html" class="menu um20_white">О мастерской</a>
+        <a href="#" class="menu um20_white">Покупателям</a>
+      </nav>
+      <input class="ul15_white" type="search" maxlength="30" placeholder="Поиск" />
+      <div class="btns">
+        <a href="#"><img src="img/profile.png" alt="Профиль" /></a>
+        <a href="#"><img src="img/cart.png" alt="Корзина" /></a>
+      </div>
+    </div>
+  </header>
+  <div class="product">
+    <div class="container">
+      <ul class="breadcrumb_black">
+        <li><a class="ul18_gray" href="index.html">Главная</a></li>
+        <li class="ul18_gray">Игрушка из дерева Молоковоз</li>
+      </ul>
+      <div class="product_block">
+        <div class="product_img">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/slaider_moloco1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slaider_moloco2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slaider_moloco3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slaider_moloco4.png" alt="">
+              </div>
             </div>
+            <div class="swiper-button-next str_right">
+              <img src="img/str_right.png" alt="">
+            </div>
+            <div class="swiper-button-prev str_left">
+              <img src="img/str_left.png" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-    </header>
-    <div class="product">
-        <div class="container">
-            <ul class="breadcrumb_black">
-                <li><a class="ul18_gray" href="index.html">Главная</a></li>
-                <li class="ul18_gray">Игрушка из дерева Молоковоз</li>
-            </ul>
-            <div class="product_block">
-                <div class="product_img">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="img/slaider_moloco1.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="img/slaider_moloco2.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="img/slaider_moloco1.png" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-button-next str_right">
-                            <img src="img/str_right.png" alt="">
-                        </div>
-                        <div class="swiper-button-prev">
-                            <img src="img/str_left.png" alt="">
-                        </div>
-                        <div class="swiper-pagination"></div>
-                      </div>
-                    
-                      <!-- Swiper JS -->
-                      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-                    
-                      <!-- Initialize Swiper -->
-                      <script>
-                        var swiper = new Swiper(".mySwiper", {
-                          cssMode: true,
-                          navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                          },
-                          pagination: {
-                            el: ".swiper-pagination",
-                          },
-                          mousewheel: true,
-                          keyboard: true,
-                        });
-                      </script>
-                    
-                      
+        <div class="product_text">
+          <div class="product_block_text">
+            <div class="ub36_black">Игрушка из дерева Молоковоз</div>
+            <div class="ub36_oranj">850 ₽</div>
+            <a href="basket.html"><button class="ur26_white">В корзину</button></a>
+          </div>
+          <div class="product_block_text">
+            <div class="ur26_black">Материалы: бук, берёза, натуральное масло.</div>
+            <div class="ur26_black">Размеры: 12*5, 5*8,5 см.</div>
+            <div class="ur26_black">Вес: 140 г.</div>
+          </div>
+          <div class="product_block_text">
+            <div class="ub26_black">О товаре</div>
+            <div class="ur20_black">"Машина-корова"...
+              Оказывается, так смешно называют молоковоз её водители.<br>
+              Мы сделали машинку из светлых пород дерева. Как будто её вареной сгущёнкой облили.<br>
+              Молоковоз также представляет серию спецтехники по мотивам эскизов Вологодской фабрики игрушек.<br>
+              К машинке приятно прикасаться: все элементы в ней округлые, без острых углов, так что малыш не поранится в
+              процессе игры.<br>
+              С «Коровкой» можно придумывать игры на демонстрацию цепочки производства продуктов питания и доставки их
+              покупателям. Например, рассказать о том, как молоко оказывается в молоковозе.</div>
+          </div>
+        </div>
+      </div>
+      <div class="info_po_product">
+        <div class="info_product">
+          <div class="ub26_black">Рекомендации по уходу</div>
+          <div class="ur20_black">Соблюдая несколько правил, вы можете сделать жизнь изделия долговечной:<br>
+            -хранить в сухих помещениях не менее одного метра от нагревательных приборов, огня.<br>
+            -при необходимости для обновления игрушки можно использовать пищевое льняное масло.<br>
+            -можно мыть, но не замачивать.</div>
+        </div>
+        <div class="info_product">
+          <div class="ub26_black">Доставка и оплата</div>
+          <div class="ur20_black">Доставка при оплате онлайн</div>
+          <div class="delivery">
+            <div class="delivery_block">
+              <img src="img/boxberry.png" alt="boxberry">
+              <svg width="221" height="1" viewBox="0 0 221 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="0.5" x2="221" y2="0.5" stroke="#9C9C9C" />
+              </svg>
+
+              <div class="ur20_black">от 180 ₽</div>
+            </div>
+            <div class="delivery_block">
+              <img src="img/russian_post.png" alt="Russian_post">
+              <svg width="201" height="1" viewBox="0 0 201 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="0.5" x2="201" y2="0.5" stroke="#9C9C9C" />
+              </svg>
+              <div class="ur20_black">от 180 ₽</div>
+            </div>
+            <div class="delivery_block">
+              <img src="img/cdek.png" alt="">
+              <svg width="249" height="1" viewBox="0 0 249 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="0.5" x2="249" y2="0.5" stroke="#9C9C9C" />
+              </svg>
+              <div class="ur20_black">от 180 ₽</div>
+            </div>
+          </div>
+          <div class="payment">
+            <div class="ur20_black">Онлайн-оплата на сайте</div>
+            <div class="icon_payments">
+              <img src="img/mastercard.png" alt="mastercard">
+              <img src="img/visa.png" alt="visa">
+              <img src="img/mir.png" alt="mir">
+            </div>
+          </div>
+        </div>
+        <div class="info_product">
+          <div class="ub26_black">Условия возврата и обмена</div>
+          <div class="ur20_black">Если вы обнаружили брак, то возврат товара и повторная доставка за наш счет. Напишите
+            и мы с Вами обязательно найдем решение! </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+        <div class="footer_block">
+            <div class="column_footer">
+                <img class="img_footer" src="img/logo.png" alt="">
+                <div class="ub36_white">8-900-503-16-56</div>
+                <div class="ul16_white">160004, г. Вологда, Ленинградский тупик, 10</div>
+                <div class="um16_white">mirigr.baby@yandex.ru</div>
+                <a class="sertificat ur20_white" href="#">Сертификат соответствия</a>
+            </div>
+            <div class="column_footer">
+                <div class="ub26_white">О нас</div>
+                <div class="podmenu_footer">
+                    <a class="ur20_white" href="#">Мастерская</a>
+                    <a class="ur20_white" href="#">Создатели мастерской</a>
+                    <a class="ur20_white" href="#">Наши принципы</a>
+                    <a class="ur20_white" href="#">О нас пишут</a>
+                    <a class="ur20_white" href="#">Достижения и награды</a>
+                    <a class="ur20_white" href="#">Вопросы и ответы</a>
+                    <a class="ur20_white" href="#">Блог</a>
                 </div>
-                <div class="product_text"></div>
+            </div>
+            <div class="column_footer1">
+                <div class="ub26_white">Покупателям</div>
+                <div class="podmenu_footer1">
+                    <a class="ur20_white" href="#">Доставка и оплата</a>
+                    <a class="ur20_white" href="#">Отзывы</a>
+                    <a class="ur20_white" href="#">Оптовый прайс</a>
+                    <a class="ur20_white" href="#">Контакты</a>
+                    <a class="ur20_white" href="#">Условия для партнёров</a>
+                </div>
+            </div>
+            <div class="column_footer2">
+                <div class="ub26_white">Каталог</div>
+                <div class="podmenu_footer2">
+                    <a class="ur20_white" href="#">Техника</a>
+                    <a class="ur20_white" href="#">Новогодняя коллекция</a>
+                    <a class="ur20_white" href="#">Развивающие игрушки</a>
+                </div>
+            </div>
+            <div class="column_footer">
+                <a href="#"><img src="img/up.png" alt="Наверх"></a>
             </div>
         </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="slaider_card.js"></script>
 </body>

@@ -146,6 +146,12 @@
     color: #8B8B8B;
 }
 
+.ur18_gray {
+    font-family: 'Ubuntu Regular';
+    font-size: 18px;
+    color: #8B8B8B;
+}
+
 .um26_black {
     font-family: 'Ubuntu Medium';
     font-size: 26px;
@@ -155,6 +161,18 @@
 .ur22_black {
     font-family: 'Ubuntu Regular';
     font-size: 22px;
+    color: #3C3C3C;
+}
+
+.ur16_black {
+    font-family: 'Ubuntu Regular';
+    font-size: 16px;
+    color: #3C3C3C;
+}
+
+.ur30_black {
+    font-family: 'Ubuntu Regular';
+    font-size: 30px;
     color: #3C3C3C;
 }
 
@@ -412,7 +430,7 @@ header .ul15_white::placeholder {
 
 button {
     background-color: #CB8F50;
-    padding: 12px 38px;
+    padding: 12px 33px;
     border-radius: 50px;
     border: 3px solid #CB8F50;
     cursor: pointer;
@@ -777,7 +795,8 @@ ul.breadcrumb_black li a:hover {
 }
 
 .about_workshop,
-.product {
+.product,
+.basket {
     padding-top: 55px;
 }
 
@@ -899,46 +918,166 @@ ul.breadcrumb_black li a:hover {
     bottom: 250px;
 }
 
-html,
-body {
-    position: relative;
-    height: 100%;
-}
 
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.product_img{
+.product_img {
     width: 720px;
     height: 720px;
 }
-.str_right{
-    
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+}
+
+.str_right {
+    margin-right: 15px;
+}
+
+.str_left {
+    margin-left: 15px;
+}
+
+.product_block {
+    width: 100%;
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_text {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.product_block_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info_po_product {
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info_product {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.delivery,
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.delivery_block {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end
+}
+
+.basket {
+    background-color: #F6F6F9;
+    width: 100%;
+    height: 530px;
+}
+
+.name_basket {
+    padding: 30px 0 40px;
+}
+
+.block_baskets {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.basket_block,
+.basket_block2 {
+    height: 270px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.basket_block {
+    width: 940px;
+    padding: 30px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.basket_block2 {
+    width: 450px;
+    padding: 50px 40px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr {
+    width: 100%;
+}
+
+.width140 {
+    width: 140px;
+    border-radius: 12px;
+}
+
+.img_name {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    align-items: center;
+}
+
+.product_basket {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_composition {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quantity_block {
+    width: 156px;
+    height: 37px;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 4px 11px;
+    justify-content: space-between;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.price_delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100px;
+    padding-top: 15px;
+}
+.product_basket_block{
+    display: flex;
+    justify-content: space-between;
 }
