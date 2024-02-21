@@ -44,6 +44,12 @@
     color: #ffffff;
 }
 
+.ui36_white {
+    font-family: 'Ubuntu Italic';
+    font-size: 36px;
+    color: #ffffff;
+}
+
 .ul15_white {
     font-family: 'Ubuntu Light';
     font-size: 15px;
@@ -74,6 +80,12 @@
     color: #FFECBB;
 }
 
+.ub30_black {
+    font-family: 'Ubuntu Bold';
+    font-size: 30px;
+    color: #3C3C3C;
+}
+
 .ub55_black {
     font-family: 'Ubuntu Bold';
     font-size: 55px;
@@ -84,6 +96,12 @@
     font-family: 'Ubuntu Regular';
     font-size: 26px;
     color: #3C3C3C;
+}
+
+.ur36_white {
+    font-family: 'Ubuntu Regular';
+    font-size: 36px;
+    color: #ffffff;
 }
 
 .ur26_white {
@@ -182,6 +200,19 @@
     color: #ffffff;
 }
 
+.ul18_black {
+    font-family: 'Ubuntu Light';
+    font-size: 18px;
+    color: #3C3C3C;
+}
+
+.ul18_gray {
+    font-family: 'Ubuntu Light';
+    font-size: 18px;
+    color: #8B8B8B;
+}
+
+
 
 
 * {
@@ -203,7 +234,7 @@ a {
 
 .header_main {
     position: absolute;
-    /* max-width: 1920px; */
+    max-width: 1920px;
     width: 100%;
     height: 130px;
     backdrop-filter: blur(6px);
@@ -679,13 +710,19 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 }
-.write2{
+
+.write2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 135px;
 }
+
 ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb_black li {
     display: inline;
 }
 
@@ -695,27 +732,213 @@ ul.breadcrumb li+li:before {
     content: "/\00a0";
 }
 
+ul.breadcrumb_black li+li:before {
+    padding: 8px;
+    color: #8B8B8B;
+    content: "/\00a0";
+}
+
+
 /* Добавить цвет для всех ссылок внутри списка */
 ul.breadcrumb li a {
     text-decoration: none;
 }
 
+ul.breadcrumb_black li a {
+    text-decoration: none;
+}
+
 /* Добавить цвет на наведении курсора мыши */
 ul.breadcrumb li a:hover {
-    color: #ffffff;
+    /* color: #ffffff; */
     text-decoration: underline;
 }
-.card_news{
+
+ul.breadcrumb_black li a:hover {
+    /* color: #ffffff; */
+    text-decoration: underline;
+}
+
+.card_news {
     margin-top: 85px;
 }
+
 .news1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 44px;
 }
-.news_btn{
+
+.news_btn {
     display: flex;
     justify-content: center;
     margin-top: 85px;
+}
+
+.about_workshop,
+.product {
+    padding-top: 55px;
+}
+
+.workshop_block {
+    display: flex;
+    /* justify-content: space-between;
+    width: 100%; */
+}
+
+.workshop_text {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+    width: 1000px;
+}
+
+.width895 {
+    width: 895px;
+}
+
+.img_big {
+    position: absolute;
+    padding: 113px 0 0 85px;
+}
+
+.img_mini {
+    position: absolute;
+    padding: 350px 0 0 0;
+}
+
+.mission_block {
+    padding: 85px 0;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+}
+
+.text_mission {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 25px;
+}
+
+.creators {
+    background-image: url(img/creators.png);
+    height: 664px;
+    margin-bottom: 85px;
+}
+
+.creators_text {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    gap: 40px;
+    justify-content: center;
+    height: 664px;
+}
+
+.quote {
+    background-image: url(img/quote.png);
+    height: 575px;
+}
+
+.quote_block {
+    height: 575px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.quote_text {
+    width: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.left_quotation {
+    position: absolute;
+    margin: 80px 0px 0 290px;
+}
+
+.right_quotation {
+    position: absolute;
+    margin: 210px 0px 0 1005px;
+}
+
+.advantages_about {
+    margin-top: 85px;
+    width: 100%;
+    /* height: 465px; */
+}
+
+.blocks_advantages {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_advantages {
+    width: 450px;
+    height: 300px;
+    background-color: #FAF4EE;
+    border: #DAC4AD 1px solid;
+    border-radius: 20px;
+    padding: 60px 25px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.img_advantages {
+    position: absolute;
+    bottom: 250px;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product_img{
+    width: 720px;
+    height: 720px;
+}
+.str_right{
+    
 }

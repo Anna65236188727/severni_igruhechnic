@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slaider_card.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>О нас пишут</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html"><img src="img/logo.png" alt="Логотип" /></a>
+            <nav>
+                <a href="index.html" class="menu um20_white">Главная</a>
+                <a href="#" class="menu um20_white">Каталог</a>
+                <a href="about_workshop.html" class="menu um20_white">О мастерской</a>
+                <a href="#" class="menu um20_white">Покупателям</a>
+            </nav>
+            <input class="ul15_white" type="search" maxlength="30" placeholder="Поиск" />
+            <div class="btns">
+                <a href="#"><img src="img/profile.png" alt="Профиль" /></a>
+                <a href="#"><img src="img/cart.png" alt="Корзина" /></a>
+            </div>
+        </div>
+    </header>
+    <div class="product">
+        <div class="container">
+            <ul class="breadcrumb_black">
+                <li><a class="ul18_gray" href="index.html">Главная</a></li>
+                <li class="ul18_gray">Игрушка из дерева Молоковоз</li>
+            </ul>
+            <div class="product_block">
+                <div class="product_img">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="img/slaider_moloco1.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/slaider_moloco2.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="img/slaider_moloco1.png" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-button-next str_right">
+                            <img src="img/str_right.png" alt="">
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="img/str_left.png" alt="">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    
+                      <!-- Swiper JS -->
+                      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    
+                      <!-- Initialize Swiper -->
+                      <script>
+                        var swiper = new Swiper(".mySwiper", {
+                          cssMode: true,
+                          navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                          },
+                          pagination: {
+                            el: ".swiper-pagination",
+                          },
+                          mousewheel: true,
+                          keyboard: true,
+                        });
+                      </script>
+                    
+                      
+                </div>
+                <div class="product_text"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
