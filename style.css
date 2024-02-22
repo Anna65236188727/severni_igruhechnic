@@ -923,7 +923,7 @@ ul.breadcrumb_black li a:hover {
     width: 720px;
     height: 720px;
 }
-
+/* 
 .swiper-button-next:after,
 .swiper-button-prev:after {
     display: none;
@@ -935,7 +935,7 @@ ul.breadcrumb_black li a:hover {
 
 .str_left {
     margin-left: 15px;
-}
+} */
 
 .product_block {
     width: 100%;
@@ -1081,3 +1081,7 @@ hr {
     display: flex;
     justify-content: space-between;
 }
+
+
+
+
