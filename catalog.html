@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>О нас пишут</title>
+    <title>Каталог</title>
 </head>
 
 <body>
@@ -14,14 +14,12 @@
             <a href="index.html"><img src="img/logo.png" alt="Логотип" /></a>
             <nav>
                 <a href="index.html" class="menu um20_white">Главная</a>
-                <a href="#" class="menu um20_white">Каталог</a>
+                <a href="catalog.html" class="menu um20_white">Каталог</a>
                 <a href="about_workshop.html" class="menu um20_white">О мастерской</a>
-                <a href="#" class="menu um20_white">Покупателям</a>
             </nav>
             <input class="ul15_white" type="search" maxlength="30" placeholder="Поиск" />
             <div class="btns">
-                <a href="#"><img src="img/profile.png" alt="Профиль" /></a>
-                <a href="#"><img src="img/cart.png" alt="Корзина" /></a>
+                <a href="basket.html"><img src="img/cart.png" alt="Корзина" /></a>
             </div>
         </div>
     </header>
@@ -39,7 +37,221 @@
                     <option value="decreasing">По убыванию цены</option>
                     <option value="new">По новинкам</option>
                 </select>
+                <div class="filters_sorting dropdown ur20_black">
+                    <span>Категория</span>
+                    <ul>
+                        <li><input type="checkbox" id="opt1"><label for="opt1">Елочные игрушки (14)</label></li>
+                        <li><input type="checkbox" id="opt2"><label for="opt2">Игрушки (3)</label></li>
+                        <li><input type="checkbox" id="opt3"><label for="opt3">Игрушки-каталки (5)</label></li>
+                        <li><input type="checkbox" id="opt1"><label for="opt1">Игрушки-шнуровки (1)</label></li>
+                        <li><input type="checkbox" id="opt2"><label for="opt2">Кубики и книжки (1)</label></li>
+                        <li><input type="checkbox" id="opt3"><label for="opt3">Мини-фигурки и статуэтки (8)</label></li>
+                        <li><input type="checkbox" id="opt1"><label for="opt1">Елочные игрушки (14)</label></li>
+                        <li><input type="checkbox" id="opt2"><label for="opt2">Техника и роботы (13)</label></li>
+                        <div class="filters_btn">
+                            <a href="#"><button class="button_gray ur18_black">Сбросить</button></a>
+                            <a href="#"><button class="button_mini ur18_white">Готово</button></a>
+                        </div>
+                    </ul>
+                </div>
+                <select class="filters_sorting ur20_black" name="sorting">
+                    <option value="">Подборки</option>
+                    <option value="increasing">Техника (14)</option>
+                    <option value="decreasing">Развивающие игрушки (14)</option>
+                    <option value="new">Новогодняя коллекция (17)</option>
+                </select>
+            </div>
+            <div class="cards">
+                <a href="#">
+                    <div class="card">
+                        <img src="img/product_catalog1.png" alt="">
+                        <div class="price_description">
+                            <div class="ub26_black">3 750 ₽</div>
+                            <div class="ur18_black">Набор деревянных машинок техника</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="product_milk.html">
+                    <div class="card">
+                        <img src="img/product_catalog2.png" alt="">
+                        <div class="price_description">
+                            <div class="ub26_black">850 ₽</div>
+                            <div class="ur18_black">Игрушка из дерева Молоковоз</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="img/product_catalog3.png" alt="">
+                        <div class="price_description">
+                            <div class="ub26_black">750 ₽</div>
+                            <div class="ur18_black">Деревянная игрушка каталка “Уточк...</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="card">
+                    <img src="img/product_catalog4.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">750 ₽</div>
+                        <div class="ur18_black">Деревянная игрушка каталка “Драк...</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/product_catalog5.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">550 ₽</div>
+                        <div class="ur18_black">Игрушка из дерева Дракончик</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/product_catalog6.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">750 ₽</div>
+                        <div class="ur18_black">Игрушка из дерева Лошадка</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/product_catalog7.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">850 ₽</div>
+                        <div class="ur18_black">Паровоз</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/product_catalog8.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">1400 ₽</div>
+                        <div class="ur18_black">Деревянная игрушка Паровоз</div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="card">
+                        <img src="img/product_catalog1.png" alt="">
+                        <div class="price_description">
+                            <div class="ub26_black">3 750 ₽</div>
+                            <div class="ur18_black">Набор деревянных машинок техника</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="product_milk.html">
+                    <div class="card">
+                        <img src="img/product_catalog2.png" alt="">
+                        <div class="price_description">
+                            <div class="ub26_black">850 ₽</div>
+                            <div class="ur18_black">Игрушка из дерева Молоковоз</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="img/product_catalog3.png" alt="">
+                        <div class="price_description">
+                            <div class="ub26_black">750 ₽</div>
+                            <div class="ur18_black">Деревянная игрушка каталка “Уточк...</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="card">
+                    <img src="img/product_catalog4.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">750 ₽</div>
+                        <div class="ur18_black">Деревянная игрушка каталка “Драк...</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/product_catalog5.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">550 ₽</div>
+                        <div class="ur18_black">Игрушка из дерева Дракончик</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/product_catalog6.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">750 ₽</div>
+                        <div class="ur18_black">Игрушка из дерева Лошадка</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/product_catalog7.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">850 ₽</div>
+                        <div class="ur18_black">Паровоз</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/product_catalog8.png" alt="">
+                    <div class="price_description">
+                        <div class="ub26_black">1400 ₽</div>
+                        <div class="ur18_black">Деревянная игрушка Паровоз</div>
+                    </div>
+                </div>
+            </div>
+            <div class="news_btn">
+                <a href="#"><button class="ur26_white">Загрузить ещё</button></a>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="footer_block">
+                <div class="column_footer">
+                    <img class="img_footer" src="img/logo.png" alt="">
+                    <div class="ub36_white">8-900-503-16-56</div>
+                    <div class="ul16_white">160004, г. Вологда, Ленинградский тупик, 10</div>
+                    <div class="um16_white">mirigr.baby@yandex.ru</div>
+                    <a class="sertificat ur20_white" href="#">Сертификат соответствия</a>
+                </div>
+                <div class="column_footer">
+                    <div class="ub26_white">О нас</div>
+                    <div class="podmenu_footer">
+                        <a class="ur20_white" href="about_workshop.html">Мастерская</a>
+                        <a class="ur20_white" href="about_workshop.html#creators">Создатели мастерской</a>
+                        <a class="ur20_white" href="about_workshop.html#advantages_about">Наши принципы</a>
+                        <a class="ur20_white" href="about_write.html">О нас пишут</a>
+                        <a class="ur20_white" href="#">Достижения и награды</a>
+                        <a class="ur20_white" href="index.html#question_response">Вопросы и ответы</a>
+                        <a class="ur20_white" href="#">Блог</a>
+                    </div>
+                </div>
+                <div class="column_footer1">
+                    <div class="ub26_white">Покупателям</div>
+                    <div class="podmenu_footer1">
+                        <a class="ur20_white" href="#">Доставка и оплата</a>
+                        <a class="ur20_white" href="#">Отзывы</a>
+                        <a class="ur20_white" href="#">Оптовый прайс</a>
+                        <a class="ur20_white" href="#">Контакты</a>
+                        <a class="ur20_white" href="#">Условия для партнёров</a>
+                    </div>
+                </div>
+                <div class="column_footer2">
+                    <div class="ub26_white">Каталог</div>
+                    <div class="podmenu_footer2">
+                        <a class="ur20_white" href="catalog.html">Техника</a>
+                        <a class="ur20_white" href="catalog.html">Новогодняя коллекция</a>
+                        <a class="ur20_white" href="catalog.html">Развивающие игрушки</a>
+                    </div>
+                </div>
+                <div class="column_footer">
+                    <a href="#"><img src="img/up.png" alt="Наверх"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const toppings = ["пепперони", "грибы", "ветчина", "ананас"]; // кто заказывает с ананасами?
+
+        // Функция для переключения видимости выпадающего списка
+        document.querySelector('.dropdown').addEventListener('click', function (event) {
+            this.querySelector('ul').style.display = 'block';
+            event.stopPropagation(); // прекращаем дальнейшую передачу события!
+        });
+
+        window.addEventListener('click', function () {
+            document.querySelector('.dropdown ul').style.display = 'none';
+        });
+    </script>
 </body>
