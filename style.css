@@ -1285,14 +1285,16 @@ input[type=checkbox]#radio-1 {
     gap: 20px;
     width: 325px;
     height: 442px;
+    transition: 0.3s ease-in-out;
 }
-/* .card:hover{
+.card:hover{
     background-color: #ffffff;
     filter: drop-shadow(0px 4px 4px #0000004d);
-    // width: 355px; 
+    /* // width: 355px;  */
     height: 413px;
     border-radius: 12px;
-} */
+    padding: 10px;
+}
 
 .price_description {
     display: flex;
